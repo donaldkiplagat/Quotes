@@ -1,0 +1,11 @@
+<h4>{{quote.author}}</h4>
+<h5>{{quote.time|time}}</h5>
+<h5>{{quote.entry}}</h5>
+
+
+
+  <i class=" fas fa-thumbs-up" (click)="increaseRating(true)">{{quote.like}}</i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <i class="fas fa-thumbs-down" (click)="increaseRating(false)">{{quote.dislike}}</i>
+
+  <br>
+  <button class="btn btn-danger" (click)= "deleteQuote(true)">Delete</button>

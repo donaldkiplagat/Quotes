@@ -1,0 +1,24 @@
+<div class="container main">
+
+<h1 class="text-center">Quotes</h1>
+<hr>
+<div class="row">
+  <div class=" text-center col-md-12">
+    <app-quote-form  [addNewQuote]='addNewQuoteFunc' ></app-quote-form>
+  </div>
+</div>
+
+<div class="row">
+    <div *ngFor="let quote of quotes;let i = index">
+      <div class="row">
+        <div class="col" >
+        <div class="panel panel-info" >
+          <div id="{{i}}"><h3>{{quote.title}}</h3>
+            <app-quote-details [quote]='quote' (isRating)='increaseRating($event,i)' (isDelete)='deleteQuote($event,i)'></app-quote-details>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
