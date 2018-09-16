@@ -5,21 +5,30 @@
       <div class="form-group">
 
         <label for="name">Title</label>
-        <input #title type="text" class="form-control form-control-lg text-center" id="title" [(ngModel)]="newQuote.title" name="title" required>
+        <input  type="text" class="form-control form-control-lg text-center" id="title" [(ngModel)]="newQuote.title" name="title" #title="ngModel" required>
+        <div [hidden]="title.valid || title.pristine" class="alert alert-danger">
+          <h4>Name is required</h4>
+        </div>
 
       </div>
 
       <div class="form-group">
 
         <label for="name">Author</label>
-        <input #author type="text" class="form-control form-control-lg text-center" id="author" [(ngModel)]="newQuote.author" name="author" required>
+        <input  type="text" class="form-control form-control-lg text-center" id="author" [(ngModel)]="newQuote.author" name="author" #author ="ngModel" required>
+        <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+          <h4> Author is required</h4>
+        </div>
 
       </div>
 
       <div class="form-group">
 
         <label for="name">Quote</label>
-        <textarea class="form-control" id="entry" rows="7" [(ngModel)]="newQuote.entry" name="entry" #entry="ngModel" required></textarea>
+        <textarea class="form-control" id="entry" rows="5" [(ngModel)]="newQuote.entry" name="entry" #entry="ngModel" #entry="ngModel" required></textarea>
+        <div [hidden]="entry.valid || entry.pristine" class="alert alert-danger">
+          <h4>Quote is required</h4>
+        </div>
 
       </div>
 
