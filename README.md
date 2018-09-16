@@ -28,6 +28,11 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+### Support and contact details
+* Contact me through my email: donald.k.kiplagat@gmail.com
+* The source code is also contained within the folder containing this ReadMe with comments on the code thus third-party support can be offered.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### License
+Moringa School
+Copyright (c)2018 **Quiz by Yours Truly-Donald Kiplagat**
+  
