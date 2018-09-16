@@ -25,7 +25,7 @@
       <div class="form-group">
 
         <label for="name">Quote</label>
-        <textarea class="form-control" id="entry" rows="5" [(ngModel)]="newQuote.entry" name="entry" #entry="ngModel" #entry="ngModel" required></textarea>
+        <textarea class="form-control" id="entry" rows="4" [(ngModel)]="newQuote.entry" name="entry" #entry="ngModel" #entry="ngModel" required></textarea>
         <div [hidden]="entry.valid || entry.pristine" class="alert alert-danger">
           <h4>Quote is required</h4>
         </div>
