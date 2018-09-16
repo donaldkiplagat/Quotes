@@ -8,8 +8,6 @@ import {Quote} from './quote'
 })
 export class AppComponent {
   quotes = [
-    new Quote("Hard Times","Sam Holland","When hard times come,the tough get going",0,0,0),
-    new Quote("Enjoyment","Ezio Hammarn","Joie de vivre",2,1,0),
   ]
 
 }

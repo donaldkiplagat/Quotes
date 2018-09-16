@@ -25,7 +25,5 @@ export class TimePipe implements PipeTransform {
         return `${hours} hours ago`;
       }
     }
-
   }
-
 }
