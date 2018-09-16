@@ -1,7 +1,11 @@
-<h4>{{quote.author}}</h4>
 <h5>{{quote.time|time}}</h5>
-<h5>{{quote.entry}}</h5>
+<blockquote >
+  <p>{{quote.entry}}</p>
+  <footer>Author:
+    <cite >{{quote.author}}</cite>
+  </footer>
 
+</blockquote>
 
 
   <i class=" fas fa-thumbs-up" (click)="increaseRating(true)">{{quote.like}}</i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
