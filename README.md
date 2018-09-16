@@ -34,6 +34,14 @@ Output Exaple: Me, You, Us
 * When the "Delete" button is clicked the parent quote will be deleted.
 
 
+### Technologies Used
+* HTML was used in making the skeleton of the website.
+* CSS was used in styling the document.
+* Atom was the source code editor of choice.
+* Git and Github were used as my local and online repositories respectively.
+* AngularCLI was used in creating the components/classes/directives/pipes needed in the web-app
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
