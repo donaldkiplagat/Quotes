@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
 
+This web-app was created in order to keep post, keep track and allow users to vote and disvote quotes.Developed during Moringa Core. This is Week 1's Independent Project.
+Date: 14st September 2018
+By: Donald Kiplagat
+  background-color: rgba(0,0,0, 0.8);
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
