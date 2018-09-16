@@ -8,6 +8,32 @@ By: Donald Kiplagat
   background-color: rgba(0,0,0, 0.8);
 
 
+## Description
+The webapp contains allows one to post a quote using the form and vote on other posted quotes displayed on the side.
+
+## Setup/Installation Requirements
+* The github page is currently live thus the following link will take you to the webpage "https://donaldkiplagat.github.io/Quotes/"
+* As long as you have a compatible browser the document will work.
+
+### Known Bugs
+The Panels can't hold a large quote inside it thus will overflow.
+
+### Behaviour Driven Development
+* The program should return "(Title name) is required" when the user leaves a form value empty.<br> 
+Input Example:" "<br>
+Output Example: "Author is required
+
+* When the user clicks on the like or dislike buttons the value beside it should increase by 1.<br>
+Input Example:(click "like")<br>
+Output Example: Like = +1<br>
+
+* When the user click on "Add Quote" the values entered in the form should be displayed on the right side.<br>
+Input Example: Title=Me, Author=You, Quote= Us<br>
+Output Exaple: Me, You, Us
+
+* When the "Delete" button is clicked the parent quote will be deleted.
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -34,5 +60,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ### License
 Moringa School
-Copyright (c)2018 **Quiz by Yours Truly-Donald Kiplagat**
+Copyright (c)2018 **Quotes by Yours Truly-Donald Kiplagat**
   
