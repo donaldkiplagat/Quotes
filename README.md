@@ -5,8 +5,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 This web-app was created in order to keep post, keep track and allow users to vote and disvote quotes.Developed during Moringa Core. This is Week 1's Independent Project.
 Date: 14st September 2018
 By: Donald Kiplagat
-  background-color: rgba(0,0,0, 0.8);
-
 
 ## Description
 The webapp contains allows one to post a quote using the form and vote on other posted quotes displayed on the side.
