@@ -15,6 +15,7 @@ The webapp contains allows one to post a quote using the form and vote on other 
 
 ### Known Bugs
 The Panels can't hold a large quote inside it thus will overflow.
+Form can submit empty values and can't be reset.
 
 ### Behaviour Driven Development
 * The program should return "(Title name) is required" when the user leaves a form value empty.<br> 
@@ -28,6 +29,8 @@ Output Example: Like = +1<br>
 * When the user click on "Add Quote" the values entered in the form should be displayed on the right side.<br>
 Input Example: Title=Me, Author=You, Quote= Us<br>
 Output Exaple: Me, You, Us
+
+* When the quote has the highest votes the title of the quote is highlighted in yellow.
 
 * When the "Delete" button is clicked the parent quote will be deleted.
 
