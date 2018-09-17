@@ -8,11 +8,13 @@ import {Quote} from '../quote'
 })
 export class QuoteComponent implements OnInit {
   private duration: number;
+  private id:number =0;
   quotes = [
   ]
   increaseRating(isRating,index){
     if(isRating){
       this.quotes[index].like +=1;
+      this.getHighest();
     }else{
       this.quotes[index].dislike +=1;
     }
@@ -28,13 +30,38 @@ export class QuoteComponent implements OnInit {
     }
   }
 
-  addNewQuote(title:string,author:string,entry:string,time:number){
-    let quote:Quote=new Quote(title,author,entry,0,0,0)
+  addNewQuote(id: number,title:string,author:string,entry:string,time:number){
+    let quote:Quote=new Quote(id,title,author,entry,0,0,0,false)
+    this.id += 1;
+    quote.id = this.id;
     this.duration = setInterval(()=>{
        quote.time += 1;
     },1000);
     this.quotes.push(quote);
 
+  }
+  getHighest(){
+    let highest = 0;
+    let highestQuote: Quote;
+    for(let quote of this.quotes){
+      if(quote.like>highest){
+        highest=quote.like;
+        highestQuote=quote;
+      }
+    }
+    console.log(highestQuote);
+    this.getId(highestQuote);
+  }
+
+  getId(change:Quote){
+    for(let quote of this.quotes){
+      if(quote.id == change.id){
+        quote.highest=true;
+      }
+      else{
+        quote.highest=false;
+      }
+    }
   }
 
   constructor() { }
