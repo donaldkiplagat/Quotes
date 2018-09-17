@@ -10,10 +10,14 @@ export class HighestDirective implements OnInit {
 
   @HostListener("change") ngOnChanges(){
     if(this.highest){
-      this.elem.nativeElement.style.backgroundColor= 'yellow';
+      this.elem.nativeElement.style.backgroundColor= 'LightGoldenrodYellow';
+      this.elem.nativeElement.style.color= 'black';
+
+
       console.log("Done In")
     }else{
-      this.elem.nativeElement.style.backgroundColor= 'black';
+      this.elem.nativeElement.style.backgroundColor= 'transparent';
+      this.elem.nativeElement.style.color='white'
       console.log("Done")
     }
   }
